@@ -63,7 +63,7 @@ def get_search_account_by_keyword():
 def get_player_stat():
     try:
         # Get and validate parameters
-        server = request.args.get('server', 'IND').upper()
+        server = request.args.get('server', 'VN').upper()
         uid = request.args.get('uid')
         gamemode = request.args.get('gamemode', 'br').lower()
         matchmode = request.args.get('matchmode', 'CAREER').upper()
@@ -215,7 +215,7 @@ def get_player_stat():
 def get_account_info():
     try:
         # Get parameters with defaults
-        server = request.args.get('server', 'IND').upper()
+        server = request.args.get('server', 'VN').upper()
         uid = request.args.get('uid')
         need_gallery_info = request.args.get('need_gallery_info', False)
         need_blacklist = request.args.get('need_blacklist', False)
