@@ -22,7 +22,7 @@ CORS(app)
 def get_search_account_by_keyword():
     try:
         # Get request parameters
-        region = request.args.get('server', 'IND').upper()
+        region = request.args.get('server', 'VN').upper()
         search_term = request.args.get('keyword')
         
         # Validate keyword parameter
